@@ -164,7 +164,7 @@ GEM
       psych (>= 4.0.0)
     rexml (3.4.1)
     rorvswild_theme_rdoc (0.3.0)
-    rouge (4.5.2)
+    rouge (4.6.0)
     ruby-rc4 (0.1.5)
     rubyzip (2.3.2)
     safe_yaml (1.0.5)
