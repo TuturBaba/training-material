@@ -38,9 +38,6 @@ Le workflow est donc en cours de production est je vais expliquer comment ul'uti
 
 <!-- This is a comment. -->
 
-**Please follow our
-[tutorial to learn how to fill the Markdown]({{ site.baseurl }}/topics/contributing/tutorials/create-new-tutorial-content/tutorial.html)**
-
 > <agenda-title></agenda-title>
 >
 > In this tutorial, we will cover:
@@ -50,15 +47,41 @@ Le workflow est donc en cours de production est je vais expliquer comment ul'uti
 >
 {: .agenda}
 
-# Title for your first section
+# Pour les non initié
 
-Give some background about what the trainees will be doing in the section.
-Remember that many people reading your materials will likely be novices,
-so make sure to explain all the relevant concepts.
+Pour tout personne n'ayant jamais touché Galaxy je vais presenté rapidement comment ca fonctionne est ce que tu dois faire pour faire le adeuxieme étapes 
 
-## Title for a subsection
-Section and subsection titles will be displayed in the tutorial index on the left side of
-the page, so try to make them informative and concise!
+> <hands-on-title> Create account </hands-on-title>
+>
+> Commencer par aller sur le site de Galaxy, je vous propose d'uiliser le serveur europe et le sous domaine ecology: (ecology.usegalaxy)[https://ecology.usegalaxy.eu/]
+> Ensuite si vous n'avez pas un compte il faut en creer un, pour cela cliquer sur "Login or Registrer"
+>![Image site](./Images/intergace.png)
+> Cela ouvrira la page de login, sur celle ci vous prerai creer un compte en appyant sur le vbouton en bas à gauche 
+>![Image site](./Images/register.png)
+
+Lorsque les etapes suivantes sont faits, et que votre compte est bien créer nous pouvons passer à l'etape suivantes qui est un rapide cours de Galaxy 
+
+![Image site](./Images/interface_explication.png)
+La barre latérale, située à gauche, donne accès aux fonctions essentielles
+de la plateforme, telles que les outils interactifs (« Interactive Tools », en violet), l’importation
+de fichiers (« Upload », en rouge), la bibliothèque d’outils disponibles (« Tools », en bleu),
+ou encore la section dédiée aux workflows (« Workflow », en vert). Cette dernière permet de
+naviguer entre ses propres workflows et ceux partagés par la communauté.
+À droite de l’écran, le panneau d’historique (« History »,en rose) permet de suivre l’en-
+semble des éléments liés à l’analyse en cours : données importées, outils exécutés, résultats
+générés. Il est possible de gérer plusieurs historiques en parallèle afin d’organiser distinctement
+les différentes étapes ou versions d’un même projet.Au centre de l’interface se trouve l’espace
+de visualisation du workflow. Chaque étape y apparaît de manière visuelle et modulaire. Un
+soin particulier a été apporté à la clarté de cette représentation. Les options proposées à l’utili-
+sateur, comme l’activation ou non de la génération d’une figure ou la définition de zones géo-
+graphiques à analyser, ont été pensées pour être facilement compréhensibles et configurables
+> <hands-on-title> Create account </hands-on-title>
+>
+>
+>
+>
+
+
 
 # Hands-on Sections
 Below are a series of hand-on boxes, one for each tool in your workflow file.
