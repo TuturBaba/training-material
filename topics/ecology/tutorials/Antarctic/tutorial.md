@@ -81,7 +81,7 @@ When using Galaxy, you can:
 - {% icon galaxy-upload %} **Upload and store datasets** directly on the platform
 - {% icon tool %} **Run analysis tools and workflows** on remote servers — your computer doesn’t handle heavy processing
 
-Each step of your analysis is recorded in a personal {% icon history %} **history**, making your work:
+Each step of your analysis is recorded in a personal {% icon galaxy-history-storage-choice %} **history**, making your work:
 
 - {% icon history-select-multiple %} **Reproducible** — Re-run the same workflow with the same settings anytime
 - {% icon galaxy-history-refresh  %} **Reusable** — Adapt existing workflows for new datasets or use cases
