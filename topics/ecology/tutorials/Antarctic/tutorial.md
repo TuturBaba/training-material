@@ -102,6 +102,64 @@ Petite présentation des grands fonctionnalités de Galaxy
 {: .details}
 
 
+---------------------------------------------------------------------------
+
+# 🌍 Introduction
+
+This tutorial will guide you through using a specific Galaxy workflow:
+
+🔗 **[State of the Environment – Antarctic](https://ecology.usegalaxy.eu/u/arthurb/w/worflow-for-representig-state-of-the-environment-in-antarctic)**
+
+This workflow was created during a Master’s internship focused on automating the production of standard reports about the environmental and marine ecosystem status in Area 48 of Antarctica. The project is based on a proposal by the British delegation to the **CCAMLR** (Commission for the Conservation of Antarctic Marine Living Resources).
+
+The idea is to **automate the creation of key visual figures** used in annual or periodic reports, making it easier to update and reproduce them over time. The workflow is still under development, but this tutorial will show you how to use it step by step.
+
+> 🧭 **In this tutorial, you will learn how to:**
+>
+> 1. Understand what Galaxy is and how it works
+> 2. Access the workflow and run it
+> 3. Choose inputs or upload your own data
+> 4. Generate automated figures
+> 5. Create and download a complete report
+
+---
+
+# 👩‍🔬 For Beginners: What is Galaxy?
+
+**Galaxy** is a free, open-source platform designed to make complex data analysis accessible — no programming skills required.
+
+You can think of Galaxy as an online laboratory where you:
+- Build an analysis step-by-step by connecting tools
+- Upload or choose data as inputs
+- Run everything with just a few clicks
+- Download the results: figures, tables, or full reports
+
+Each step is recorded and saved, making your analysis:
+- ✅ **Reproducible**: run the same workflow again anytime
+- 🔁 **Reusable**: adapt it for other data or use cases
+- 👥 **Shareable**: collaborate with others easily
+
+In this tutorial, you’ll use Galaxy to recreate several figures used in official CCAMLR reports. The workflow is designed to be user-friendly and customizable, even if you're new to Galaxy or data analysis.
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # Hands-on Sections
