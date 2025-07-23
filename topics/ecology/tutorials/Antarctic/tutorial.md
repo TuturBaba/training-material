@@ -31,25 +31,6 @@ contributors:
 - Marc ELEAUME
 ---
 
-Ce tuto a pour but d'aider à l'utilisation d'un Workflow bie précis: [State environt Antarctic](https://ecology.usegalaxy.eu/u/arthurb/w/worflow-for-representig-state-of-the-environment-in-antarctic)
-La fabrication du workflow est issus d'un stage de M2 sur l'automatisation d'un rapport type sur l'etat de l'nevironement et des ressoucreces marines dans la zone 48 en Antarctic, proposé par la delegation britanique à la CCAMLR, l'idée et d'automatiser la production des figures pour faciliter la production du rapport dans le temps. 
-
-Le workflow est donc en cours de production est je vais expliquer comment ul'utiliser 
-
-<!-- This is a comment. -->
-
-> <agenda-title></agenda-title>
->
-> In this tutorial, we will cover:
->
-> 1. TOC
-> {:toc}
->
-{: .agenda}
-
-# Pour les non initié
-
-Pour tout personne n'ayant jamais touché Galaxy je vais presenté rapidement comment ca fonctionne est ce que tu dois faire pour faire le adeuxieme étapes 
 
 > <hands-on-title> Create account </hands-on-title>
 >
@@ -103,6 +84,13 @@ Petite présentation des grands fonctionnalités de Galaxy
 
 
 ---------------------------------------------------------------------------
+> **In this tutorial, you will learn how to:**
+>
+> 1. Understand what Galaxy is and how it works
+> 2. Access the workflow and run it
+> 3. Choose inputs or upload your own data
+> 4. Generate automated figures
+
 
 # Introduction
 
@@ -114,16 +102,21 @@ This workflow was created during a Master’s internship focused on automating t
 
 The idea is to **automate the creation of visual figures** used in annual or periodic reports, making it easier to update and reproduce them over time. The workflow is still under development, but this tutorial will show you how to use it step by step.
 
-> **In this tutorial, you will learn how to:**
+<!-- This is a comment. -->
+
+> <agenda-title></agenda-title>
 >
-> 1. Understand what Galaxy is and how it works
-> 2. Access the workflow and run it
-> 3. Choose inputs or upload your own data
-> 4. Generate automated figures
+> In this tutorial, we will cover:
+>
+> 1. TOC
+> {:toc}
+>
+{: .agenda}
 
-## 🌐 What is Galaxy?
 
-**Galaxy** is an open-source software platform designed to simplify scientific data analysis. Originally developed for bioinformatics and life sciences, it is now widely used in many other research fields — including genomics, proteomics, epigenetics, ecology, astronomy, and materials science.
+## For First-Time Users: What is Galaxy?
+
+**Galaxy** is an open-source software platform designed to simplify scientific data analysis. Originally developed for biology, it is now widely used in many other research fields.
 
 Galaxy’s core mission is to **make complex data analysis accessible** and to promote **reproducible and transparent science**. To do this, Galaxy allows researchers to run advanced analyses through an {% icon galaxy-interface %} **easy-to-use web interface**, without needing any programming skills or complex installations.
 
@@ -149,6 +142,91 @@ Each step of your analysis is recorded in a personal {% icon history %} **histor
 
 Galaxy is designed for scientists — whether or not they code. In this tutorial, you'll learn how to use Galaxy to generate automated figures for Antarctic environmental reports with just a few clicks.
 
+> <hands-on-title>Create a Galaxy Account</hands-on-title>
+>
+> First, go to the Galaxy server we'll be using for this tutorial:  
+> 👉 [ecology.usegalaxy.eu](https://ecology.usegalaxy.eu) {% icon galaxy-link %}
+>
+> If you don’t have an account yet, you’ll need to create one. Click on **"Login or Register"** in the top-right corner of the homepage.
+>
+> ![Login Button](./Images/interface.png)
+>
+> On the login page, you can register a new account by clicking the button at the bottom-left:
+>
+> ![Register Page](./Images/register.png)
+>
+> Once your account is created and you are logged in, you are ready to begin working with Galaxy!
+{: .hands_on}
+
+---
+
+## 🖥️ A quick tour of the Galaxy interface
+
+Here is a general overview of Galaxy’s main components. You’ll become familiar with these as we go through the tutorial:
+
+![Interface overview](./Images/interface_explication.png)
+
+---
+
+> <details-title>Upload (Red Panel)</details-title>
+>
+> {% icon upload %} This is where you upload your datasets.
+>
+> ![Upload Panel](./Images/upload.png)
+>
+> - Click **“Choose local file”** to select files from your computer  
+> - After the file appears in the panel, click **“Start”** to begin the upload  
+> - Once the upload is complete (green bar), click **“Close”**
+>
+> You can also use other options like:
+> - **“Paste/Fetch data”**: paste URLs to fetch data from the web  
+> - Upload specific formats like **shapefiles** (e.g. `.shp`, `.dbf`, etc.)
+{: .details}
+
+---
+
+> <details-title>Tools (Green Panel)</details-title>
+>
+> {% icon tool %} This is Galaxy’s library of all available tools.
+>
+> ![Tools Panel](./Images/Tools.png)
+>
+> - Use the **search bar** to find tools by name or keyword  
+> - Each tool has a **form** with input parameters. These are usually well-documented  
+> - At the bottom of each tool page, you may find links to tutorials like this one:
+>
+> ![Jupyter Tool Example](./Images/tools_jupyter.png)
+>
+> Tools range from data conversion, filtering, and plotting, to more complex statistical or geospatial analysis.
+{: .details}
+
+---
+
+> <details-title>Workflow (Blue Panel)</details-title>
+>
+> {% icon workflow %} This is where you manage and run workflows.
+>
+> ![Workflow Panel](./Images/workflow.png)
+>
+> - Access your saved workflows  
+> - Browse shared workflows from the Galaxy community  
+> - Launch, edit, or create workflows using Galaxy’s visual editor
+{: .details}
+
+---
+
+> <details-title>History (Pink Panel)</details-title>
+>
+> {% icon history %} This panel tracks everything you do in Galaxy.
+>
+> ![History Panel](./Images/workflow.png)
+>
+> - It shows uploaded files, tool runs, outputs, and parameters used  
+> - Each step is logged, making your work reproducible  
+> - You can manage multiple histories in parallel (e.g., for different projects)
+>
+> This panel also allows you to **name, annotate, and export** your analysis history.
+{: .details}
 
 
 
