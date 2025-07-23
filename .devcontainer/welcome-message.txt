@@ -9,3 +9,55 @@ in the terminal (bottom panel of your screen)
 📝 For more information about using this environment, see our GTN tutorial:
 https://training.galaxyproject.org/topics/contributing/tutorials/running-codespaces/tutorial.html
 
+> <hands-on-title>My Step</hands-on-title>
+{: .hands_on}
+
+> <question-title></question-title>
+{: .question}
+
+> <tip-title>Importing data via links</tip-title>
+{: .tip}
+
+> <comment-title></comment-title>
+{: .comment}
+
+> <details-title>More details on the ....</details-title>
+{: .details}
+
+> <warning-title>Danger: You can lose data!</warning-title>
+{: .warning}
+
+> <hands-on-title>My Step</hands-on-title>
+>
+> 1. **My Tool** {% icon tool %} with the following parameters
+>    - {% icon param-text %} *"My text parameter"*: `my value`
+>    - {% icon param-file %} *"My input file"*: `my file`
+>    - {% icon param-files %} *"My multiple file input or collection"*: `my collection`
+>    - {% icon param-select %} *"My select menu"*: `my choice`
+>    - {% icon param-check %} *"My check box"*: `yes`
+>    - {% icon param-toggle %} *"My toggle button"*: `Yes`
+>    - {% icon param-repeat %} **My repeat parameter**
+>      - *"param1"*: `42`
+{: .hands_on}
+
+
+> > <code-in-title>Bash</code-in-title>
+> > ```bash
+> > cat /tmp/test.ini
+> > ```
+> {: .code-in}
+>
+> > <code-out-title></code-out-title>
+> > The file should look like:
+> >
+> > ```ini
+> > [example]
+> > server_name = Dogs!
+> > listen = 192.168.0.2
+> > apikey = super-secret-api-key-wow!
+> > ```
+> {: .code-out}
+{: .code-2col}
+
+> If you don't know where you're going, you might not get there.
+{: .quote cite="https://en.m.wikiquote.org/wiki/Yogi_Berra" author="Yogi Berra"}
