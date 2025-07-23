@@ -65,38 +65,37 @@ The idea is to **automate the creation of visual figures** used in annual or per
 
 **Galaxy** is an open-source software platform designed to simplify scientific data analysis. Originally developed for biology, it is now widely used in many other research fields.
 
-Galaxy’s core mission is to **make complex data analysis accessible** and to promote **reproducible and transparent science**. To do this, Galaxy allows researchers to run advanced analyses through an {% icon instances %} **easy-to-use web interface**, without needing any programming skills or complex installations.
+Galaxy’s core mission is to **make complex data analysis accessible** and to promote **reproducible and transparent science**. To do this, Galaxy allows researchers to run advanced analyses through an **easy-to-use web interface**, without needing any programming skills or complex installations.
 
 ### How does Galaxy work?
 
-There are many Galaxy instances around the world — each one is a server hosting the platform. The two largest public instances are:
+There are many Galaxy instances around the world, each one is a server hosting the platform. The two largest public instances are:
 
-- **[UseGalaxy.org](https://usegalaxy.org)** — for North America  
-- **[UseGalaxy.eu](https://usegalaxy.eu)** — for Europe
+- **[UseGalaxy.org](https://usegalaxy.org)** - for North America  
+- **[UseGalaxy.eu](https://usegalaxy.eu)** - for Europe
 
-Other regional or project-specific instances exist too, such as {% icon instances %} [UseGalaxy.fr](https://usegalaxy.fr) for France.
+Other regional or project specific instances exist too.
 
 When using Galaxy, you can:
 
 - {% icon galaxy-upload %} **Upload and store datasets** directly on the platform
-- {% icon tool %} **Run analysis tools and workflows** on remote servers — your computer doesn’t handle heavy processing
+- {% icon tool %} **Run analysis tools and workflows** on remote servers, your computer doesn’t handle heavy processing
 
 Each step of your analysis is recorded in a personal {% icon galaxy-history-storage-choice %} **history**, making your work:
 
-- {% icon history-select-multiple %} **Reproducible** — Re-run the same workflow with the same settings anytime
-- {% icon galaxy-history-refresh  %} **Reusable** — Adapt existing workflows for new datasets or use cases
-- {% icon cofest %} **Shareable** — Collaborate easily by sharing your workflows and histories with others
+- {% icon history-select-multiple %} **Reproducible** - Re-run the same workflow with the same settings anytime
+- {% icon galaxy-history-refresh  %} **Reusable** - Adapt existing workflows for new datasets or use cases
+- {% icon cofest %} **Shareable** - Collaborate easily by sharing your workflows and histories with others
 
-Galaxy is designed for scientists — whether or not they code. In this tutorial, you'll learn how to use Galaxy to generate automated figures for Antarctic environmental reports with just a few clicks.
+Galaxy is designed for scientists, whether or not they code. In this tutorial, you'll learn how to use Galaxy to generate automated figures for Antarctic environmental reports with just a few clicks.
 
 > <hands-on-title>Create a Galaxy Account</hands-on-title>
 >
-> First, go to the Galaxy server we'll be using for this tutorial:  
-> [ecology.usegalaxy.eu](https://ecology.usegalaxy.eu) {% icon galaxy-link %}
+> First, go to the Galaxy server we'll be using for this tutorial: {% icon galaxy-link %} [ecology.usegalaxy.eu](https://ecology.usegalaxy.eu) 
 >
 > If you don’t have an account yet, you’ll need to create one. Click on **"Login or Register"** in the top-right corner of the homepage.
 >
-> ![Login Button](./Images/interface.png)
+> {% include image.html file="interface.png" alt="Login Button" width="50%" %}
 >
 > On the login page, you can register a new account by clicking the button at the bottom-left:
 >
