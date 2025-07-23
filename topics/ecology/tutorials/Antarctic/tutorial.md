@@ -55,31 +55,52 @@ Pour tout personne n'ayant jamais touché Galaxy je vais presenté rapidement co
 >
 > Commencer par aller sur le site de Galaxy, je vous propose d'uiliser le serveur europe et le sous domaine ecology: (ecology.usegalaxy)[https://ecology.usegalaxy.eu/]
 > Ensuite si vous n'avez pas un compte il faut en creer un, pour cela cliquer sur "Login or Registrer"
->![Image site](./Images/intergace.png)
+>![Image site](./Images/interface.png)
 > Cela ouvrira la page de login, sur celle ci vous prerai creer un compte en appyant sur le vbouton en bas à gauche 
 >![Image site](./Images/register.png)
+{: .hands_on}
 
 Lorsque les etapes suivantes sont faits, et que votre compte est bien créer nous pouvons passer à l'etape suivantes qui est un rapide cours de Galaxy 
 
 ![Image site](./Images/interface_explication.png)
-La barre latérale, située à gauche, donne accès aux fonctions essentielles
-de la plateforme, telles que les outils interactifs (« Interactive Tools », en violet), l’importation
-de fichiers (« Upload », en rouge), la bibliothèque d’outils disponibles (« Tools », en bleu),
-ou encore la section dédiée aux workflows (« Workflow », en vert). Cette dernière permet de
-naviguer entre ses propres workflows et ceux partagés par la communauté.
-À droite de l’écran, le panneau d’historique (« History »,en rose) permet de suivre l’en-
-semble des éléments liés à l’analyse en cours : données importées, outils exécutés, résultats
-générés. Il est possible de gérer plusieurs historiques en parallèle afin d’organiser distinctement
-les différentes étapes ou versions d’un même projet.Au centre de l’interface se trouve l’espace
-de visualisation du workflow. Chaque étape y apparaît de manière visuelle et modulaire. Un
-soin particulier a été apporté à la clarté de cette représentation. Les options proposées à l’utili-
-sateur, comme l’activation ou non de la génération d’une figure ou la définition de zones géo-
-graphiques à analyser, ont été pensées pour être facilement compréhensibles et configurables
-> <hands-on-title> Create account </hands-on-title>
+Petite présentation des grands fonctionnalités de Galaxy 
+
+> <details-title> Upload (red) </details-title>
 >
+> Permet l'importation des differents fichier 
+>![Image site](./Images/upload.png)
+> Pou télécharger un fichier depuis votre machine, il vous suffit de cliquer sur "Choose local file", de choisir votre dossier ensuite lorsque qu'il apparait sur le board vous pouvert lancer le téléchargelment en appyant sur "Start" et enfin lorsque que c'est vert, cliquer sur "Close" pour fermer
+> Il y a d'autre méthode, plus specifique comme "paste/Fectch data" qui permet de télécharger via un URL, ou d'uatre pour des fichier specifique comme les shapefiles.
+{: .details}
+
+
+> <details-title> Tools (green) </details-title>
 >
+> La bibliothèque d’outils disponibles
+>![Image site](./Images/Tools.png)
+> Il existe de nombreux outils disponible sur Galaxy, 
+> Il y a d'autre méthode, plus specifique comme "paste/Fectch data" qui permet de télécharger via un URL, ou d'uatre pour des fichier specifique comme les shapefiles.
+> Vous pouvez chercher un outil via la barre de recherche, un outil a un formulaire a repondre, souvent assez clair a pprendre en mains, mais pour plus de faciliter, il y a souvent des tutorials, comme celui ci dans le basde la page de l'outil
+> ![Image site](./Images/tools_jupyter.png)
+{: .details}
+
+
+> <details-title> Workflow (blue) </details-title>
 >
+> la section dédiée aux workflows
+>![Image site](./Images/workflow.png)
+> Cette section permet de creer 
+> Cette dernière permet de naviguer entre ses propres workflows et ceux partagés par la communauté
+{: .details}
+
+
+> <details-title> History (pink) </details-title>
 >
+> À droite de l’écran, le panneau d’historique
+>![Image site](./Images/workflow.png)
+> permet de suivre l’ensemble des éléments liés à l’analyse en cours : données importées, outils exécutés, résultats générés. Il est possible de gérer plusieurs historiques en parallèle afin d’organiser distinctement les différentes étapes ou versions d’un même projet.Au centre de l’interface se trouve l’espace de visualisation du workflow. Chaque étape y apparaît de manière visuelle et modulaire. Un soin particulier a été apporté à la clarté de cette représentation. Les options proposées à l’utilisateur, comme l’activation ou non de la génération d’une figure ou la définition de zones géographiques à analyser, ont été pensées pour être facilement compréhensibles et configurables
+{: .details}
+
 
 
 
@@ -87,7 +108,7 @@ graphiques à analyser, ont été pensées pour être facilement compréhensible
 Below are a series of hand-on boxes, one for each tool in your workflow file.
 Often you may wish to combine several boxes into one or make other adjustments such
 as breaking the tutorial into sections, we encourage you to make such changes as you
-see fit, this is just a starting point :)
+see fit, this is just a starting point :
 
 Anywhere you find the word "***TODO***", there is something that needs to be changed
 depending on the specifics of your tutorial.
