@@ -120,12 +120,12 @@ The idea is to **automate the creation of visual figures** used in annual or per
 
 Galaxy’s core mission is to **make complex data analysis accessible** and to promote **reproducible and transparent science**. To do this, Galaxy allows researchers to run advanced analyses through an {% icon galaxy-interface %} **easy-to-use web interface**, without needing any programming skills or complex installations.
 
-### 🧰 How does Galaxy work?
+### How does Galaxy work?
 
 There are many Galaxy instances around the world — each one is a server hosting the platform. The two largest public instances are:
 
-- 🌍 **[UseGalaxy.org](https://usegalaxy.org)** — for North America  
-- 🇪🇺 **[UseGalaxy.eu](https://usegalaxy.eu)** — for Europe
+- **[UseGalaxy.org](https://usegalaxy.org)** — for North America  
+- **[UseGalaxy.eu](https://usegalaxy.eu)** — for Europe
 
 Other regional or project-specific instances exist too, such as {% icon galaxy-link %} [UseGalaxy.fr](https://usegalaxy.fr) for France.
 
@@ -136,16 +136,16 @@ When using Galaxy, you can:
 
 Each step of your analysis is recorded in a personal {% icon history %} **history**, making your work:
 
-- ✅ **Reproducible** — Re-run the same workflow with the same settings anytime
-- 🔁 **Reusable** — Adapt existing workflows for new datasets or use cases
-- 👥 **Shareable** — Collaborate easily by sharing your workflows and histories with others
+- {% icon history-select %} **Reproducible** — Re-run the same workflow with the same settings anytime
+- {% icon galaxy-history %} **Reusable** — Adapt existing workflows for new datasets or use cases
+- {% icon cofest %} **Shareable** — Collaborate easily by sharing your workflows and histories with others
 
 Galaxy is designed for scientists — whether or not they code. In this tutorial, you'll learn how to use Galaxy to generate automated figures for Antarctic environmental reports with just a few clicks.
 
 > <hands-on-title>Create a Galaxy Account</hands-on-title>
 >
 > First, go to the Galaxy server we'll be using for this tutorial:  
-> 👉 [ecology.usegalaxy.eu](https://ecology.usegalaxy.eu) {% icon galaxy-link %}
+> [ecology.usegalaxy.eu](https://ecology.usegalaxy.eu) {% icon galaxy-link %}
 >
 > If you don’t have an account yet, you’ll need to create one. Click on **"Login or Register"** in the top-right corner of the homepage.
 >
@@ -160,15 +160,15 @@ Galaxy is designed for scientists — whether or not they code. In this tutorial
 
 ---
 
-## 🖥️ A quick tour of the Galaxy interface
+## A quick tour of the Galaxy interface
 
 Here is a general overview of Galaxy’s main components. You’ll become familiar with these as we go through the tutorial:
 
 ![Interface overview](./Images/interface_explication.png)
 
 ---
-
-> <details-title>Upload (Red Panel)</details-title>
+{% tool [Upload] %}
+> <details-title>{% icon upload %} Upload (Red Panel)</details-title>
 >
 > {% icon upload %} This is where you upload your datasets.
 >
