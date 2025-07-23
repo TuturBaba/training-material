@@ -61,6 +61,119 @@ The idea is to **automate the creation of visual figures** used in annual or per
 >
 {: .agenda}
 
+## For First-Time Users: What is Galaxy?
+
+**Galaxy** is an open-source software platform designed to simplify scientific data analysis. Originally developed for biology, it is now widely used in many other research fields.
+
+Galaxy’s core mission is to **make complex data analysis accessible** and to promote **reproducible and transparent science**. To do this, Galaxy allows researchers to run advanced analyses through an {% icon instances %} **easy-to-use web interface**, without needing any programming skills or complex installations.
+
+### How does Galaxy work?
+
+There are many Galaxy instances around the world — each one is a server hosting the platform. The two largest public instances are:
+
+- **[UseGalaxy.org](https://usegalaxy.org)** — for North America  
+- **[UseGalaxy.eu](https://usegalaxy.eu)** — for Europe
+
+Other regional or project-specific instances exist too, such as {% icon instances %} [UseGalaxy.fr](https://usegalaxy.fr) for France.
+
+When using Galaxy, you can:
+
+- {% icon galaxy-upload %} **Upload and store datasets** directly on the platform
+- {% icon tool %} **Run analysis tools and workflows** on remote servers — your computer doesn’t handle heavy processing
+
+Each step of your analysis is recorded in a personal {% icon history %} **history**, making your work:
+
+- {% icon history-select-multiple %} **Reproducible** — Re-run the same workflow with the same settings anytime
+- {% icon galaxy-history-refresh  %} **Reusable** — Adapt existing workflows for new datasets or use cases
+- {% icon cofest %} **Shareable** — Collaborate easily by sharing your workflows and histories with others
+
+Galaxy is designed for scientists — whether or not they code. In this tutorial, you'll learn how to use Galaxy to generate automated figures for Antarctic environmental reports with just a few clicks.
+
+> <hands-on-title>Create a Galaxy Account</hands-on-title>
+>
+> First, go to the Galaxy server we'll be using for this tutorial:  
+> [ecology.usegalaxy.eu](https://ecology.usegalaxy.eu) {% icon galaxy-link %}
+>
+> If you don’t have an account yet, you’ll need to create one. Click on **"Login or Register"** in the top-right corner of the homepage.
+>
+> ![Login Button](./Images/interface.png)
+>
+> On the login page, you can register a new account by clicking the button at the bottom-left:
+>
+> ![Register Page](./Images/register.png)
+>
+> Once your account is created and you are logged in, you are ready to begin working with Galaxy!
+{: .hands_on}
+
+---
+
+## A quick tour of the Galaxy interface
+
+Here is a general overview of Galaxy’s main components. You’ll become familiar with these as we go through the tutorial:
+
+![Interface overview](./Images/interface_explication.png)
+
+---
+{% tool [Upload] %}
+> <details-title>{% icon galaxy-upload  %} Upload (Red Panel)</details-title>
+>
+> {% icon galaxy-upload  %} This is where you upload your datasets.
+>
+> ![Upload Panel](./Images/upload.png)
+>
+> - Click **“Choose local file”** to select files from your computer  
+> - After the file appears in the panel, click **“Start”** to begin the upload  
+> - Once the upload is complete (green bar), click **“Close”**
+>
+> You can also use other options like:
+> - **“Paste/Fetch data”**: paste URLs to fetch data from the web  
+> - Upload specific formats like **shapefiles** (e.g. `.shp`, `.dbf`, etc.)
+{: .details}
+
+---
+
+> <details-title>Tools (Green Panel)</details-title>
+>
+> {% icon tool %} This is Galaxy’s library of all available tools.
+>
+> ![Tools Panel](./Images/Tools.png)
+>
+> - Use the **search bar** to find tools by name or keyword  
+> - Each tool has a **form** with input parameters. These are usually well-documented  
+> - At the bottom of each tool page, you may find links to tutorials like this one:
+>
+> ![Jupyter Tool Example](./Images/tools_jupyter.png)
+>
+> Tools range from data conversion, filtering, and plotting, to more complex statistical or geospatial analysis.
+{: .details}
+
+---
+
+> <details-title>Workflow (Blue Panel)</details-title>
+>
+> {% icon galaxy-workflows-activity %} This is where you manage and run workflows.
+>
+> ![Workflow Panel](./Images/workflow.png)
+>
+> - Access your saved workflows  
+> - Browse shared workflows from the Galaxy community  
+> - Launch, edit, or create workflows using Galaxy’s visual editor
+{: .details}
+
+---
+
+> <details-title>History (Pink Panel)</details-title>
+>
+> {% icon galaxy-history-storage-choice %} This panel tracks everything you do in Galaxy.
+>
+> ![History Panel](./Images/workflow.png)
+>
+> - It shows uploaded files, tool runs, outputs, and parameters used  
+> - Each step is logged, making your work reproducible  
+> - You can manage multiple histories in parallel (e.g., for different projects)
+>
+> This panel also allows you to **name, annotate, and export** your analysis history.
+{: .details}
 
 
 
