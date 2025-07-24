@@ -279,8 +279,8 @@ Each of these figures has **its own dedicated mini-workflow** (called a sub-work
 >
 > Once the workflow page loads, click the **`Run`** button to open the input form. (Remember to log in to your Galaxy account first!)
 > <img src="./Images/skip.png" style="width:70%; display:block; margin-left:auto; margin-right:auto;">
-> A Quick Tip: Each figure's section in the workflow starts with a boolean (Yes/No) switch. This handy feature allows you to choose exactly which figures you want to generate without running all of them every time. Simply toggle it "off" if you don't need a particular figure.
-> From this form, you can select which figures you wish to activate and then customize their individual settings and inputs.
+> A Quick Tip: Each figure's section in the workflow starts with a boolean (Yes/No) switch. This handy feature allows you to choose exactly which figures you want to generate without running all of them every time. Simply toggle it "off" if you don't need a particular figure.  
+> From this form, you can select which figures you wish to activate and then customize their individual settings and inputs.  
 > Now, let's walk through how to configure and run each figure, step-by-step!
 {: .hands_on}
 
@@ -294,15 +294,12 @@ It is mainly used to provide a geographic frame of reference for the rest of the
 > <hands-on-title>Configure Figure 1</hands-on-title>
 >
 > {% icon param-repeat %} **`Area Selection`**  
-> *Type*: `Text`  
+> *Type*: `Text`
 >
-> Use this input to select the regions to display on the map. You can list one or more **CCAMLR subarea codes**, separated by commas.
->
-> **Accepted codes include**:
->
+> This first parameter lets you select which **geographic zones (ASDs)** you want to display on the map.
+> The map shows the Antarctic region, and the goal is to highlight the zones that will be studied in the rest of the report. To do this, simply type the codes of the areas you want to include, separated by **commas**. Available zones:
 > `881, 882, 883, 481, 482, 483, 484, 485, 486, 5841, 5842, 5843a, 5843b, 5844a, 5844b, 5851, 5852, 586, 587`
->
-> The order does not matter, and you can include as many as you want.
+> The order of the codes does not matter, and you can enter as many as you need.
 {: .hands_on}
 
 ---
