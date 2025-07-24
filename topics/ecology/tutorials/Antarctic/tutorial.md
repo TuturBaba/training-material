@@ -85,7 +85,7 @@ The idea is to **automate the creation of visual figures** used in annual or per
 >
 > Galaxy’s core mission is to **make complex data analysis accessible** and to promote **reproducible and transparent science**. To do this, Galaxy allows researchers to run advanced analyses through an **easy-to-use web interface**, without needing any programming skills or complex installations.
 >
-> ### How does Galaxy work?
+> ## How does Galaxy work?
 >
 > There are many Galaxy instances around the world, each one is a server hosting the platform. The two largest public instances are:
 >
