@@ -78,7 +78,7 @@ The idea is to **automate the creation of visual figures** used in annual or per
 >
 {: .agenda}
 
-## For First-Time Users: What is Galaxy?
+# For First-Time Users: What is Galaxy?
 
 > <details-title> Frist time</details-title>
 > **Galaxy** is an open-source software platform designed to simplify scientific data analysis. Originally developed for biology, it is now widely used in many other research fields.
@@ -193,7 +193,18 @@ The idea is to **automate the creation of visual figures** used in annual or per
 {: .details}
 
 
+# How Run Figure
 
+Le workflow {% icon galaxy-link %} **[State of the Environment – Antarctic](https://ecology.usegalaxy.eu/u/arthurb/w/worflow-for-representig-state-of-the-environment-in-antarctic)** est composait de plusieurs sous-workflow. J'ai produit un sous-workfow par figure du rapport de la CCAMLR, ajourd'hui, les figures disponibles sont 1,2,3,4,5,8,9 and 2 figures pour des donnes biologique, de suivi d'espece. Une partie sera disponible par sous-workflow, il sera expliquer dans un premier temps qu'elle sosnt les differentes options a rentrer et dans un deuxieme temps un point une partie plus explicative avec des infomation supplmentaire 
+
+> <hands-on-title>Lancer le workflow</hands-on-title>
+> Tout d'abord allez sur ce lien {% icon galaxy-link %} **[State of the Environment – Antarctic](https://ecology.usegalaxy.eu/u/arthurb/w/worflow-for-representig-state-of-the-environment-in-antarctic)**
+> <img src="./Images/Run_workflow.png" style="width:70%; display:block; margin-left:auto; margin-right:auto;">
+> Arriver sur l'image il vosu susffit de lancer RUN (si vous avez bien sur un compte). A partir d'ici nous allons explorer le workflow Figure par Figure 
+>
+>
+>
+{: .hands_on}
 
 
 
