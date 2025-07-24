@@ -63,13 +63,13 @@ The idea is to **automate the creation of visual figures** used in annual or per
 
 ## For First-Time Users: What is Galaxy?
 
-**Galaxy** is an open-source software platform designed to simplify scientific data analysis. Originally developed for biology, it is now widely used in many other research fields.
-
-Galaxy’s core mission is to **make complex data analysis accessible** and to promote **reproducible and transparent science**. To do this, Galaxy allows researchers to run advanced analyses through an **easy-to-use web interface**, without needing any programming skills or complex installations.
+> **Galaxy** is an open-source software platform designed to simplify scientific data analysis. Originally developed for biology, it is now widely used in many other research fields.
+>
+> Galaxy’s core mission is to **make complex data analysis accessible** and to promote **reproducible and transparent science**. To do this, Galaxy allows researchers to run advanced analyses through an **easy-to-use web interface**, without needing any programming skills or complex installations.
 
 ### How does Galaxy work?
 
-There are many Galaxy instances around the world, each one is a server hosting the platform. The two largest public instances are:
+> There are many Galaxy instances around the world, each one is a server hosting the platform. The two largest public instances are:
 
 - **[UseGalaxy.org](https://usegalaxy.org)** - for North America  
 - **[UseGalaxy.eu](https://usegalaxy.eu)** - for Europe
@@ -133,7 +133,7 @@ Here is a general overview of Galaxy’s main components. You’ll become famili
 >
 > {% icon tool %} This is where you'll find all the analytical power of Galaxy! Think of it as a vast library filled with programs designed to help you work with your data.
 >
-> <img src="./Images/Tools.png" style="width:20%; display:block; margin-left:auto; margin-right:auto;">
+> <img src="./Images/Tools.png" style="width:40%; display:block; margin-left:auto; margin-right:auto;">
 >
 > - **Find Your Tool**: Use the search bar at the top to quickly locate tools by name or keyword.
 > - **Understand the Forms**: Every tool has a form with various input parameters. These forms are usually well-documented, explaining what each option does and what kind of input it expects.
@@ -164,7 +164,7 @@ Here is a general overview of Galaxy’s main components. You’ll become famili
 >
 > {% icon galaxy-history-storage-choice %} This panel is your complete record of everything you do in Galaxy.
 >
-> ![History Panel](./Images/workflow.png)
+> <img src="./Images/history.png" style="width:50%; display:block; margin-left:auto; margin-right:auto;">
 >
 > - **Detailed Tracking**: The history panel shows every step you take: the files you upload, the tools you run, all the outputs generated, and even the exact parameters you used for each tool.
 > - **Reproducibility is Key** {% icon galaxy-refresh %}: Because every single step is logged, your work becomes fully reproducible. This means you (or anyone else) can go back and precisely recreate your analysis at any time, which is crucial for scientific rigor. 
