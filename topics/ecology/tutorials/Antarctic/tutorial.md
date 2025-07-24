@@ -114,12 +114,10 @@ Here is a general overview of Galaxy’s main components. You’ll become famili
 
 
 
-> <details-title> **Upload** (Red) <span style="color:red;">Texte en rouge</span> </details-title>
+> <details-title> **Upload** (Red)  </details-title>
 >
 > {% icon galaxy-upload  %} This is where you upload your datasets.
-> <span style="color:red;">Texte en rouge</span>
-> ![Upload Panel](./Images/upload.png)
->
+> <img src="./Images/upload.png" style="width:70%; display:block; margin-left:auto; margin-right:auto;">
 > - Click **“Choose local file”** to select files from your computer  
 > - After the file appears in the panel, click **“Start”** to begin the upload  
 > - Once the upload is complete (green bar), click **“Close”**
