@@ -214,10 +214,10 @@ Le workflow {% icon galaxy-link %} **[State of the Environment – Antarctic](ht
 > This first figure shows the geographical distribution of CCAMLR-defined areas and subareas (ASDs), as well as CEMP sites in Antarctica.
 > It serves as a spatial reference for the rest of the analysis, clearly positioning the different geographic entities. 
 > 
-> {% icon param-repeat %}{% tool [Area Selection Fig1]() %}: 
->            - *"Choose the input type"*: `Text`
+> {% icon param-repeat %}{% tool [Area Selection Fig1]() %}:   
+>            - *"Choose the input type"*: `Text`  
 > This input allows you to choose which zones will be used or displayed for the data. The method for defining the zones is as follows:
-> Using Antarctic Subareas:
+> Using Antarctic Subareas:  
 >   881, 882, 883, 481, 482, 483, 484, 485, 486, 5841, 5842, 5843a, 5843b, 5844a, 5844b, 5851, 5852, 586, 587
 > The order of the letters and the number of zones are not important, but the values must be separated by commas.
 >
