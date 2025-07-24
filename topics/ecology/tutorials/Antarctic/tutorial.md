@@ -39,6 +39,23 @@ contributors:
 > 3. Choose inputs or upload your own data
 > 4. Generate automated figures
 
+> <hands-on-title>My Step</hands-on-title>
+{: .hands_on}
+
+> <question-title></question-title>
+{: .question}
+
+> <tip-title>Importing data via links</tip-title>
+{: .tip}
+
+> <comment-title></comment-title>
+{: .comment}
+
+> <details-title>More details on the ....</details-title>
+{: .details}
+
+> <warning-title>Danger: You can lose data!</warning-title>
+{: .warning}
 
 # Introduction
 
@@ -151,7 +168,7 @@ Here is a general overview of Galaxy’s main components. You’ll become famili
 >
 > {% icon galaxy-workflows-activity %} This is your control center for workflows, which are like pre-designed pipelines of tools that run automatically. Workflows help you automate complex analyses and ensure your steps are reproducible.
 >
-> ![Workflow Panel](./Images/workflow.png)
+> <img src="./Images/workflow.png" style="width:70%; display:block; margin-left:auto; margin-right:auto;">
 >
 > - **Access your saved workflows**: Easily find and reuse any workflows you've created or imported.
 > - **Browse shared workflows**: Discover and use workflows created by the wider Galaxy community. This is a great way to learn and leverage existing solutions!
@@ -164,7 +181,7 @@ Here is a general overview of Galaxy’s main components. You’ll become famili
 >
 > {% icon galaxy-history-storage-choice %} This panel is your complete record of everything you do in Galaxy.
 >
-> <img src="./Images/history.png" style="width:50%; display:block; margin-left:auto; margin-right:auto;">
+> <img src="./Images/history.png" style="width:20%; display:block; margin-left:auto; margin-right:auto;">
 >
 > - **Detailed Tracking**: The history panel shows every step you take: the files you upload, the tools you run, all the outputs generated, and even the exact parameters you used for each tool.
 > - **Reproducibility is Key** {% icon galaxy-refresh %}: Because every single step is logged, your work becomes fully reproducible. This means you (or anyone else) can go back and precisely recreate your analysis at any time, which is crucial for scientific rigor. 
