@@ -114,7 +114,7 @@ Here is a general overview of Galaxy’s main components. You’ll become famili
 
 
 
-> <details-title> **Upload** (Red)  </details-title>
+> <details-title> Upload (Red)  </details-title>
 >
 > {% icon galaxy-upload  %} This is where you upload your datasets.
 > <img src="./Images/upload.png" style="width:70%; display:block; margin-left:auto; margin-right:auto;">
@@ -129,15 +129,16 @@ Here is a general overview of Galaxy’s main components. You’ll become famili
 
 ---
 
-> <details-title>Tools (Green Panel)</details-title>
+> <details-title>Tools (Green)</details-title>
 >
-> {% icon tool %} This is Galaxy’s library of all available tools.
+> {% icon tool %} This is where you'll find all the analytical power of Galaxy! Think of it as a vast library filled with programs designed to help you work with your data.
 >
-> ![Tools Panel](./Images/Tools.png)
+> <img src="./Images/Tools.png" style="width:20%; display:block; margin-left:auto; margin-right:auto;">
 >
-> - Use the **search bar** to find tools by name or keyword  
-> - Each tool has a **form** with input parameters. These are usually well-documented  
-> - At the bottom of each tool page, you may find links to tutorials like this one:
+> - **Find Your Tool**: Use the search bar at the top to quickly locate tools by name or keyword.
+> - **Understand the Forms**: Every tool has a form with various input parameters. These forms are usually well-documented, explaining what each option does and what kind of input it expects.
+> - **Learn More**: At the bottom of a tool's page, you might find links to helpful tutorials, just like this one!
+> Galaxy's tools cover a wide range of functions. You'll find everything from basic tasks like converting data formats, filtering out unwanted information, and creating plots, to more advanced analyses such as statistical modeling or geospatial mapping.
 >
 > ![Jupyter Tool Example](./Images/tools_jupyter.png)
 >
@@ -146,30 +147,30 @@ Here is a general overview of Galaxy’s main components. You’ll become famili
 
 ---
 
-> <details-title>Workflow (Blue Panel)</details-title>
+> <details-title>Workflow (Blue)</details-title>
 >
-> {% icon galaxy-workflows-activity %} This is where you manage and run workflows.
+> {% icon galaxy-workflows-activity %} This is your control center for workflows, which are like pre-designed pipelines of tools that run automatically. Workflows help you automate complex analyses and ensure your steps are reproducible.
 >
 > ![Workflow Panel](./Images/workflow.png)
 >
-> - Access your saved workflows  
-> - Browse shared workflows from the Galaxy community  
-> - Launch, edit, or create workflows using Galaxy’s visual editor
+> - **Access your saved workflows**: Easily find and reuse any workflows you've created or imported.
+> - **Browse shared workflows**: Discover and use workflows created by the wider Galaxy community. This is a great way to learn and leverage existing solutions!
+> - **Manage workflows**: You can launch existing workflows to run them on new data, edit them to tweak their parameters, or create new workflows from scratch using Galaxy's intuitive visual editor
 {: .details}
 
 ---
 
-> <details-title>History (Pink Panel)</details-title>
+> <details-title>History Panel (Pink)</details-title>
 >
-> {% icon galaxy-history-storage-choice %} This panel tracks everything you do in Galaxy.
+> {% icon galaxy-history-storage-choice %} This panel is your complete record of everything you do in Galaxy.
 >
 > ![History Panel](./Images/workflow.png)
 >
-> - It shows uploaded files, tool runs, outputs, and parameters used  
-> - Each step is logged, making your work reproducible  
-> - You can manage multiple histories in parallel (e.g., for different projects)
+> - **Detailed Tracking**: The history panel shows every step you take: the files you upload, the tools you run, all the outputs generated, and even the exact parameters you used for each tool.
+> - **Reproducibility is Key** {% icon galaxy-refresh %}: Because every single step is logged, your work becomes fully reproducible. This means you (or anyone else) can go back and precisely recreate your analysis at any time, which is crucial for scientific rigor. 
+> - **Manage Multiple Projects**: You can easily manage multiple histories in parallel. This is super handy for keeping your work organized, especially if you're juggling different projects or experiments.
 >
-> This panel also allows you to **name, annotate, and export** your analysis history.
+> Beyond just tracking, the history panel also lets you **name, annotate, and export** your analysis history. This makes it easy to share your work with colleagues or keep a detailed record for your own reference.
 {: .details}
 
 
