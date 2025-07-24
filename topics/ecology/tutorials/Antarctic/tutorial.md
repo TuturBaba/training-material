@@ -99,7 +99,7 @@ Galaxy is designed for scientists, whether or not they code. In this tutorial, y
 >
 > On the login page, you can register a new account by clicking the button at the bottom-left:
 >
-> <img src="./Images/register.png" alt="Register Page" style="width:70%; display:block; margin-left:auto; margin-right:auto;"> 
+> <img src="./Images/register.png" alt="Register Page" style="width:40%; display:block; margin-left:auto; margin-right:auto;"> 
 >
 > Once your account is created and you are logged in, you are ready to begin working with Galaxy!
 {: .hands_on}
