@@ -99,7 +99,7 @@ Galaxy is designed for scientists, whether or not they code. In this tutorial, y
 >
 > On the login page, you can register a new account by clicking the button at the bottom-left:
 >
-> <img src="./Images/register.png" alt="Register Page" style="width:10%; display:block; margin-left:auto; margin-right:auto;"> 
+> <img src="./Images/register.png" alt="Register Page" style="width:20%; display:block; margin-left:auto; margin-right:auto;"> 
 >
 > Once your account is created and you are logged in, you are ready to begin working with Galaxy!
 {: .hands_on}
@@ -114,10 +114,10 @@ Here is a general overview of Galaxy’s main components. You’ll become famili
 
 
 
-> <details-title> {% icon galaxy-upload  %}  {% tool [Upload] %} Upload (Red Panel)</details-title>
+> <details-title> **Upload** (Red) <span style="color:red;">Texte en rouge</span> </details-title>
 >
 > {% icon galaxy-upload  %} This is where you upload your datasets.
->
+> <span style="color:red;">Texte en rouge</span>
 > ![Upload Panel](./Images/upload.png)
 >
 > - Click **“Choose local file”** to select files from your computer  
