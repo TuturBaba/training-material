@@ -80,6 +80,7 @@ The idea is to **automate the creation of visual figures** used in annual or per
 
 ## For First-Time Users: What is Galaxy?
 
+> <details-title> Frist time</details-title>
 > **Galaxy** is an open-source software platform designed to simplify scientific data analysis. Originally developed for biology, it is now widely used in many other research fields.
 >
 > Galaxy’s core mission is to **make complex data analysis accessible** and to promote **reproducible and transparent science**. To do this, Galaxy allows researchers to run advanced analyses through an **easy-to-use web interface**, without needing any programming skills or complex installations.
@@ -189,7 +190,7 @@ The idea is to **automate the creation of visual figures** used in annual or per
 > >
 > > Beyond just tracking, the history panel also lets you **name, annotate, and export** your analysis history. This makes it easy to share your work with colleagues or keep a detailed record for your own reference.
 > {: .details}
-
+{: .details}
 
 
 
