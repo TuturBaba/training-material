@@ -95,7 +95,9 @@ Galaxy is designed for scientists, whether or not they code. In this tutorial, y
 >
 > If you don’t have an account yet, you’ll need to create one. Click on **"Login or Register"** in the top-right corner of the homepage.
 >
-> <img src="./Images/interface.png" alt="Login Button" style="width:50%;" />
+> <div style="text-align:center;">
+  <img src="./Images/interface.png" alt="Login Button" style="width:50%;">
+</div>
 >
 > On the login page, you can register a new account by clicking the button at the bottom-left:
 >
