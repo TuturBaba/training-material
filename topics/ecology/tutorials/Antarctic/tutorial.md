@@ -201,14 +201,58 @@ Le workflow {% icon galaxy-link %} **[State of the Environment – Antarctic](ht
 > Tout d'abord allez sur ce lien {% icon galaxy-link %} **[State of the Environment – Antarctic](https://ecology.usegalaxy.eu/u/arthurb/w/worflow-for-representig-state-of-the-environment-in-antarctic)**
 > <img src="./Images/Run_workflow.png" style="width:70%; display:block; margin-left:auto; margin-right:auto;">
 > Arriver sur l'image il vosu susffit de lancer RUN (si vous avez bien sur un compte). A partir d'ici nous allons explorer le workflow Figure par Figure 
->
+> 
 >
 >
 {: .hands_on}
 
 
 
+## FIG1: GEOGRAPHICAL OVERVIEW MAP
 
+> <hands-on-title> Task description </hands-on-title>
+> This first figure shows the geographical distribution of CCAMLR-defined areas and subareas (ASDs), as well as CEMP sites in Antarctica.
+> It serves as a spatial reference for the rest of the analysis, clearly positioning the different geographic entities. 
+> 
+> {% icon param-repeat %}{% tool [Area Selection Fig1]() %}: 
+>            - *"Choose the input type"*: `Text`
+> This input allows you to choose which zones will be used or displayed for the data. The method for defining the zones is as follows:
+> Using Antarctic Subareas:
+>   881, 882, 883, 481, 482, 483, 484, 485, 486, 5841, 5842, 5843a, 5843b, 5844a, 5844b, 5851, 5852, 586, 587
+> The order of the letters and the number of zones are not important, but the values must be separated by commas.
+>
+>            - *"Select value"*: `{'id': 3, 'output_name': 'output'}`
+>        - {% icon param-repeat %} *"Insert User inputs"*
+>            - *"Name for parameter"*: `multiplier`
+>            - *"Choose the input type"*: `Integer`
+>                - *"Select value"*: `{'id': 4, 'output_name': 'output'}`
+>        - {% icon param-repeat %} *"Insert User inputs"*
+>            - *"Name for parameter"*: `ZoneXASD`
+>            - *"Choose the input type"*: `Boolean`
+>                - *"Select value"*: `Yes`
+>        - {% icon param-repeat %} *"Insert User inputs"*
+>            - *"Name for parameter"*: `LabelXASD`
+>            - *"Choose the input type"*: `Boolean`
+>                - *"Select value"*: `Yes`
+>        - {% icon param-repeat %} *"Insert User inputs"*
+>            - *"Name for parameter"*: `ZoneXCEMP`
+>            - *"Choose the input type"*: `Boolean`
+>                - *"Select value"*: `Yes`
+>        - {% icon param-repeat %} *"Insert User inputs"*
+>            - *"Name for parameter"*: `bbox`
+>            - *"Choose the input type"*: `Boolean`
+>                - *"Select value"*: `Yes`
+>
+>    ***TODO***: *Check parameter descriptions*
+>
+>    ***TODO***: *Consider adding a comment or tip box*
+>
+>    > <comment-title> short description </comment-title>
+>    >
+>    > A comment about the tool or something else. This box can also be in the main text
+>    {: .comment}
+>
+{: .hands_on}
 
 
 
