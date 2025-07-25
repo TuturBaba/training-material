@@ -192,70 +192,6 @@ The idea is to **automate the creation of visual figures** used in annual or per
 > {: .details}
 {: .details}
 
-
-# How Run Figure
-
-Le workflow {% icon galaxy-link %} **[State of the Environment – Antarctic](https://ecology.usegalaxy.eu/u/arthurb/w/worflow-for-representig-state-of-the-environment-in-antarctic)** est composait de plusieurs sous-workflow. J'ai produit un sous-workfow par figure du rapport de la CCAMLR, ajourd'hui, les figures disponibles sont 1,2,3,4,5,8,9 and 2 figures pour des donnes biologique, de suivi d'espece. Une partie sera disponible par sous-workflow, il sera expliquer dans un premier temps qu'elle sosnt les differentes options a rentrer et dans un deuxieme temps un point une partie plus explicative avec des infomation supplmentaire 
-
-> <hands-on-title>Lancer le workflow</hands-on-title>
-> Tout d'abord allez sur ce lien {% icon galaxy-link %} **[State of the Environment – Antarctic](https://ecology.usegalaxy.eu/u/arthurb/w/worflow-for-representig-state-of-the-environment-in-antarctic)**
-> <img src="./Images/Run_workflow.png" style="width:70%; display:block; margin-left:auto; margin-right:auto;">
-> Arriver sur l'image il vosu susffit de lancer RUN (si vous avez bien sur un compte). A partir d'ici nous allons explorer le workflow Figure par Figure 
-> 
->
->
-{: .hands_on}
-
-
-
-## FIG1: GEOGRAPHICAL OVERVIEW MAP
-
-> <hands-on-title> Task description </hands-on-title>
-> This first figure shows the geographical distribution of CCAMLR-defined areas and subareas (ASDs), as well as CEMP sites in Antarctica.
-> It serves as a spatial reference for the rest of the analysis, clearly positioning the different geographic entities. 
-> 
-> {% icon param-repeat %}{% tool [Area Selection Fig1]() %}:   
-> - "Input type": `Text`  
-> This input allows you to choose which zones will be used or displayed for the data. The method for defining the zones is as follows:
-> Using Antarctic Subareas:  
->   881, 882, 883, 481, 482, 483, 484, 485, 486, 5841, 5842, 5843a, 5843b, 5844a, 5844b, 5851, 5852, 586, 587
-> The order of the letters and the number of zones are not important, but the values must be separated by commas.
->
->            - *"Select value"*: `{'id': 3, 'output_name': 'output'}`
->        - {% icon param-repeat %} *"Insert User inputs"*
->            - *"Name for parameter"*: `multiplier`
->            - *"Choose the input type"*: `Integer`
->                - *"Select value"*: `{'id': 4, 'output_name': 'output'}`
->        - {% icon param-repeat %} *"Insert User inputs"*
->            - *"Name for parameter"*: `ZoneXASD`
->            - *"Choose the input type"*: `Boolean`
->                - *"Select value"*: `Yes`
->        - {% icon param-repeat %} *"Insert User inputs"*
->            - *"Name for parameter"*: `LabelXASD`
->            - *"Choose the input type"*: `Boolean`
->                - *"Select value"*: `Yes`
->        - {% icon param-repeat %} *"Insert User inputs"*
->            - *"Name for parameter"*: `ZoneXCEMP`
->            - *"Choose the input type"*: `Boolean`
->                - *"Select value"*: `Yes`
->        - {% icon param-repeat %} *"Insert User inputs"*
->            - *"Name for parameter"*: `bbox`
->            - *"Choose the input type"*: `Boolean`
->                - *"Select value"*: `Yes`
->
->    ***TODO***: *Check parameter descriptions*
->
->    ***TODO***: *Consider adding a comment or tip box*
->
->    > <comment-title> short description </comment-title>
->    >
->    > A comment about the tool or something else. This box can also be in the main text
->    {: .comment}
->
-{: .hands_on}
-
-
-
 # How to Run a Figure
 
 This tutorial will guide you through running specific parts of the  {% icon galaxy-link %} **[State of the Environment – Antarctic](https://ecology.usegalaxy.eu/u/arthurb/w/worflow-for-representig-state-of-the-environment-in-antarctic)**. This main workflow is actually made up of several smaller, specialized workflows – one for each figure from the CCAMLR report.
@@ -291,6 +227,20 @@ Each of these figures has **its own dedicated mini-workflow** (called a sub-work
 This figure provides a spatial overview of the **ASDs (Areas, Subareas, and Divisions)** defined by the CCAMLR, as well as the locations of **CEMP sites** (Ecosystem Monitoring Program).  
 It is mainly used to provide a geographic frame of reference for the rest of the report.
 
+> <details-title>What data is used in this figure?</details-title>
+>
+> This figure uses data from **two different sources**:
+>
+> - **Background layer (Bathymetry)**:  
+> The Antarctic seafloor bathymetry raster was downloaded from:  
+> [https://gis.ccamlr.org/geoserver/www/GEBCO2024_5000.tif](https://gis.ccamlr.org/geoserver/www/GEBCO2024_5000.tif)
+>
+> - **ASD zones and CEMP sites**:  
+> These vector layers were downloaded from the official CCAMLR GitHub repository:  
+> [https://github.com/ccamlr/data](https://github.com/ccamlr/data)
+{: .details}
+
+
 > <hands-on-title>Configure Figure 1</hands-on-title>
 >
 > {% icon param-repeat %} **`Area Selection`**  
@@ -315,7 +265,7 @@ It is mainly used to provide a geographic frame of reference for the rest of the
 >
 > Tip: If the figure looks too small or too crowded, try increasing or decreasing this value to improve readability.
 >
-> #### **Display Toggles (Boolean Options)** --- 
+> #### **Display Toggles (Boolean Options)** 
 >  
 > This figure includes several **boolean options** that allow you to customize what is shown on the map. These options are useful for adjusting the level of detail or clarity in the visual output.
 > 
