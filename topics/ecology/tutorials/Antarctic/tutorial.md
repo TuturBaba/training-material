@@ -315,7 +315,7 @@ It is mainly used to provide a geographic frame of reference for the rest of the
 >
 > Tip: If the figure looks too small or too crowded, try increasing or decreasing this value to improve readability.
 >
-> ### Display Toggles (Boolean Options)  
+> ## Display Toggles (Boolean Options)  
 >  
 > This figure includes several **boolean options** that allow you to customize what is shown on the map. These options are useful for adjusting the level of detail or clarity in the visual output.
 > 
@@ -347,6 +347,7 @@ It is mainly used to provide a geographic frame of reference for the rest of the
 > - If set to `No`, the figure will be saved as a **PNG**  
 >
 > Tip: PNG is recommended for quick viewing and reports, while PDF is useful for high-quality print or vector editing.
+> 
 > {% icon param-repeat %} **`Fill Entire Zone`**  
 > *Type*: `Boolean`  
 >
