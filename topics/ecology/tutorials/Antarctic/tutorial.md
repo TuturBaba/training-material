@@ -42,7 +42,13 @@ contributors:
 > <hands-on-title>My Step</hands-on-title>
 {: .hands_on}
 
+> My Step
+{: .hands_on}
+
 > <question-title></question-title>
+{: .question}
+
+> ouais
 {: .question}
 
 > <tip-title>Importing data via links</tip-title>
