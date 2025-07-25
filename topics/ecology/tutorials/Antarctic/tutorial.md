@@ -356,7 +356,7 @@ It is mainly used to provide a geographic frame of reference for the rest of the
 > - If set to `No`, the full base map will be shown, with your selected zones highlighted
 >
 > Use this when you want a cleaner view focused only on your area of interest.
-
+> 
 >
 {: .hands_on}
 
