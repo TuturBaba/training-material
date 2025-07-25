@@ -300,6 +300,41 @@ It is mainly used to provide a geographic frame of reference for the rest of the
 > The map shows the Antarctic region, and the goal is to highlight the zones that will be studied in the rest of the report. To do this, simply type the codes of the areas you want to include, separated by **commas**. Available zones:    
 > `881, 882, 883, 481, 482, 483, 484, 485, 486, 5841, 5842, 5843a, 5843b, 5844a, 5844b, 5851, 5852, 586, 587`    
 > The order of the codes does not matter, and you can enter as many as you need.
+> 
+> {% icon param-repeat %} **`Multiplier`**  
+> *Type*: `Integer`
+>
+> The **Multiplier** parameter allows you to adjust the **overall scaling** of the figure, including text size, symbol size, and resolution.  
+> It gives you some freedom to fine-tune the final appearance of the map.
+>
+> <img src="./Images/multiplier.png" style="width:50%; display:block; margin-left:auto; margin-right:auto;">
+>
+> You can change the value in two ways:
+> - Use the small up/down arrows to increase or decrease the value  
+> - Or simply type a number directly with your keyboard
+>
+> Tip: If the figure looks too small or too crowded, try increasing or decreasing this value to improve readability.
+>
+> ### Suite d'option boolean
+>
+> Il y a une ssuite d'ioption boolan quipermet d'ajuster la visu de la figure. Les zones ASD sont des découpages géographiques des océans propo-
+sés par la FAO. Elles nous permettent de diviser l'ocean en plusieurs parties, les limite sont les traits rouges et "Label ASD" sont les labels des zones, leurs noms. Il y a aussi les CEMP P (CCAMLR Ecosystem Monitoring Program). C'est des lieux essentielles à la collecte de données, et sur l'image ce sont les point jaunes. Si vous mettez Yes, alors il seront affiché 
+> ![ASD_CEMP](./Images/asd_cemp.png){ width="800" height="600" style="display: block; margin: 0 auto" }
+> {% icon param-repeat %} **`Zone ASD`**  
+> *Type*: `Boolean`
+> {% icon param-repeat %} **`Label ASD`**  
+> *Type*: `Boolean`
+> {% icon param-repeat %} **`CEMP`**  
+> *Type*: `Boolean`
+>
+>
+>> {% icon param-repeat %} **`PDF or PNG`**  
+> *Type*: `Boolean`
+> {% icon param-repeat %} **`Fill Entire Zone`**  
+> *Type*: `Boolean`
+>
+>
+>
 {: .hands_on}
 
 ---
