@@ -315,7 +315,7 @@ It is mainly used to provide a geographic frame of reference for the rest of the
 >
 > Tip: If the figure looks too small or too crowded, try increasing or decreasing this value to improve readability.
 >
-> ### Display Toggles (Boolean Options)
+> ### Display Toggles (Boolean Options)  
 >  
 > This figure includes several **boolean options** that allow you to customize what is shown on the map. These options are useful for adjusting the level of detail or clarity in the visual output.
 > 
@@ -325,7 +325,7 @@ It is mainly used to provide a geographic frame of reference for the rest of the
 > - The **CEMP sites** (CCAMLR Ecosystem Monitoring Program) are shown as **yellow dots**, these are long-term monitoring sites used for environmental data collection
 > 
 > You can toggle the display of each of these elements individually by selecting **Yes** or **No** in the workflow form.
-> ![ASD_CEMP](./Images/asd_cemp.png){ width="400" style="display: block; margin: 0 auto" }
+> <img src="./Images/asd_cemp.png" style="width:50%; display:block; margin-left:auto; margin-right:auto;">
 > 
 > {% icon param-repeat %} **`Zone ASD`**  
 > *Type*: `Boolean`  
