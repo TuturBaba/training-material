@@ -340,7 +340,8 @@ It is mainly used to provide a geographic frame of reference for the rest of the
 > Show or hide the yellow dots representing CEMP monitoring sites
 >
 > {% icon param-repeat %} **`PDF or PNG`**  
-> *Type*: `Boolean`
+> *Type*: `Boolean`  
+> Ce parametre est loin d'etre la plus interessant, elle permet juste d'avoir un pdf au lieu d'un PNG 
 > {% icon param-repeat %} **`Fill Entire Zone`**  
 > *Type*: `Boolean`
 >
