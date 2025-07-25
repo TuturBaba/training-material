@@ -341,11 +341,22 @@ It is mainly used to provide a geographic frame of reference for the rest of the
 >
 > {% icon param-repeat %} **`PDF or PNG`**  
 > *Type*: `Boolean`  
-> Ce parametre est loin d'etre la plus interessant, elle permet juste d'avoir un pdf au lieu d'un PNG 
+>
+> This option lets you choose the **output format** of the figure:  
+> - If set to `Yes`, the figure will be saved as a **PDF**  
+> - If set to `No`, the figure will be saved as a **PNG**  
+>
+> Tip: PNG is recommended for quick viewing and reports, while PDF is useful for high-quality print or vector editing.
 > {% icon param-repeat %} **`Fill Entire Zone`**  
-> *Type*: `Boolean`
+> *Type*: `Boolean`  
 >
+> By default, the map is shown on a full Antarctic projection. But if you’re focusing on specific zones, you might want to **zoom in and crop** the image to only show those selected areas.
 >
+> - If set to `Yes`, the map will be zoomed and cropped to fit the selected ASD zones  
+> - If set to `No`, the full base map will be shown, with your selected zones highlighted
+>
+> Use this when you want a cleaner view focused only on your area of interest.
+
 >
 {: .hands_on}
 
