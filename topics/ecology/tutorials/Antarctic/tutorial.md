@@ -58,14 +58,23 @@ contributors:
 {: .warning}
 
 # Introduction
+<!-- State of the Environment – Antarctic-->
 
-This tutorial will guide you through using a specific Galaxy workflow:
+This tutorial will walk you through the following public workflow:
 
 {% icon galaxy-link %} **[State of the Environment – Antarctic](https://ecology.usegalaxy.eu/u/arthurb/w/worflow-for-representig-state-of-the-environment-in-antarctic)**
 
 This workflow was created during a Master’s internship focused on automating the production of standard reports about the environmental and marine ecosystem status in Antarctica. The project is based on a proposal by the British delegation to the **CCAMLR** (Commission for the Conservation of Antarctic Marine Living Resources).
 
 The idea is to **automate the creation of visual figures** used in annual or periodic reports, making it easier to update and reproduce them over time. The workflow is still under development, but this tutorial will show you how to use it step by step.
+
+> ### Learning objectives
+>
+> - Understand the structure and purpose of the workflow
+> - Select and configure environmental figures
+> - Learn how to run sub-workflows using Galaxy’s visual interface
+> - Customize input parameters and generate publication-ready outputs
+{: .objectives}
 
 <!-- This is a comment: Rajouter un contexte biologique -->
 
@@ -192,35 +201,37 @@ The idea is to **automate the creation of visual figures** used in annual or per
 > {: .details}
 {: .details}
 
-# How to Run a Figure
+---
+# How the Workflow is Structured
 
-This tutorial will guide you through running specific parts of the  {% icon galaxy-link %} **[State of the Environment – Antarctic](https://ecology.usegalaxy.eu/u/arthurb/w/worflow-for-representig-state-of-the-environment-in-antarctic)**. This main workflow is actually made up of several smaller, specialized workflows – one for each figure from the CCAMLR report.
+The main workflow is composed of several **modular sub-workflows**, each one dedicated to a specific figure from the CCAMLR report. This design allows users to run only the figures they are interested in, making the process more efficient and adaptable.
 
-Currently, the following figures are available:
-- **Environmental maps**: Figures 1, 2, 3, 4, 5, 8, and 9  
-- **Species monitoring figures**: 2 biological indicators based on animal observation data
+**Available figure groups:**
+- **Environmental maps**: Figures 1, 2, 3, 4, 5, 8, 9  
+- **Biological indicators**: 2 sub-workflows for species monitoring (in progress)
 
-Each of these figures has **its own dedicated mini-workflow** (called a sub-workflow) that you can run independently. For each figure, we will explain:
-1. What the figure shows and its main purpose.
-2. How to set up the necessary input data and options.
-3. Any additional background information or helpful tips.
+Each figure has:
+1. A dedicated sub-workflow
+2. Its own input parameters and optional settings
+3. A descriptive section in this tutorial
 
 ---
 
 > <hands-on-title>Run the Main Workflow</hands-on-title>
 >
-> Let's begin by opening the main workflow: {% icon galaxy-link %} **[State of the Environment – Antarctic](https://ecology.usegalaxy.eu/u/arthurb/w/worflow-for-representig-state-of-the-environment-in-antarctic)**
+> Start by opening the workflow here:  
+> {% icon galaxy-link %} **[State of the Environment – Antarctic](https://ecology.usegalaxy.eu/u/arthurb/w/worflow-for-representig-state-of-the-environment-in-antarctic)**
 >
-> <img src="./Images/Run_workflow.png" style="width:70%; display:block; margin-left:auto; margin-right:auto;">
+> <img src="./Images/Run_workflow.png" style="width:70%; display:block; margin:auto;">
 >
-> Once the workflow page loads, click the **`Run`** button to open the input form. (Remember to log in to your Galaxy account first!)
-> <img src="./Images/skip.png" style="width:70%; display:block; margin-left:auto; margin-right:auto;">
-> A Quick Tip: Each figure's section in the workflow starts with a boolean (Yes/No) switch. This handy feature allows you to choose exactly which figures you want to generate without running all of them every time. Simply toggle it "off" if you don't need a particular figure.  
-> From this form, you can select which figures you wish to activate and then customize their individual settings and inputs.  
-> Now, let's walk through how to configure and run each figure, step-by-step!
+> Click **`Run`** to access the workflow form. Make sure you are logged in!
+>
+> <img src="./Images/skip.png" style="width:70%; display:block; margin:auto;">
+>
+> Each figure has a toggle (Yes/No) to control whether it is executed. This allows you to run only selected figures. After toggling the figures you want, configure the input parameters below.
+
 {: .hands_on}
 
----
 
 ## FIGURE 1: Geographical Overview Map
 
