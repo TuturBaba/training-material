@@ -229,14 +229,12 @@ Each figure has:
 > <img src="./Images/skip.png" style="width:70%; display:block; margin:auto;">
 >
 > Each figure has a toggle (Yes/No) to control whether it is executed. This allows you to run only selected figures. After toggling the figures you want, configure the input parameters below.
-
 {: .hands_on}
 
 
-## FIGURE 1: Geographical Overview Map
+# Figure 1 – Geographical Overview Map
 
-This figure provides a spatial overview of the **ASDs (Areas, Subareas, and Divisions)** defined by the CCAMLR, as well as the locations of **CEMP sites** (Ecosystem Monitoring Program).  
-It is mainly used to provide a geographic frame of reference for the rest of the report.
+This map provides a spatial overview of the **ASDs (Areas, Subareas, and Divisions)** used by CCAMLR, along with the locations of **CEMP monitoring sites**. It is designed to give a geographic reference for interpreting the rest of the report.
 
 > <details-title>What data is used in this figure?</details-title>
 >
@@ -249,6 +247,17 @@ It is mainly used to provide a geographic frame of reference for the rest of the
 > - **ASD zones and CEMP sites**:  
 > These vector layers were downloaded from the official CCAMLR GitHub repository:  
 > [https://github.com/ccamlr/data](https://github.com/ccamlr/data)
+{: .details}
+
+> ### Data used in this figure
+>
+> - **Bathymetry (Background)**  
+> Source: GEBCO dataset  
+> [Download raster](https://gis.ccamlr.org/geoserver/www/GEBCO2024_5000.tif)
+>
+> - **ASD zones and CEMP sites (Vector data)**  
+> Source: CCAMLR official GitHub  
+> [GitHub repository](https://github.com/ccamlr/data)
 {: .details}
 
 
