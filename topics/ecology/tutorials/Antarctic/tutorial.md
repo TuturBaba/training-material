@@ -296,9 +296,9 @@ It is mainly used to provide a geographic frame of reference for the rest of the
 > {% icon param-repeat %} **`Area Selection`**  
 > *Type*: `Text`
 >
-> This first parameter lets you select which **geographic zones (ASDs)** you want to display on the map.  
-> The map shows the Antarctic region, and the goal is to highlight the zones that will be studied in the rest of the report. To do this, simply type the codes of the areas you want to include, separated by **commas**. Available zones:  
-> `881, 882, 883, 481, 482, 483, 484, 485, 486, 5841, 5842, 5843a, 5843b, 5844a, 5844b, 5851, 5852, 586, 587`  
+> This first parameter lets you select which **geographic zones (ASDs)** you want to display on the map.    
+> The map shows the Antarctic region, and the goal is to highlight the zones that will be studied in the rest of the report. To do this, simply type the codes of the areas you want to include, separated by **commas**. Available zones:    
+> `881, 882, 883, 481, 482, 483, 484, 485, 486, 5841, 5842, 5843a, 5843b, 5844a, 5844b, 5851, 5852, 586, 587`    
 > The order of the codes does not matter, and you can enter as many as you need.
 {: .hands_on}
 
