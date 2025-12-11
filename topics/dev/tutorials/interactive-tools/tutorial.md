@@ -1107,7 +1107,7 @@ Let's check this integration on your machine. You can use a VM if you prefer not
 > cd ~/GxIT/galaxy/config
 > # Create custom config files
 > cat galaxy.yml.interactivetools > galaxy.yml
-> cat tool_conf.xml.sample > tool_conf.xml
+> cat tool_conf.xml.sample > ../tool_conf.xml
 > ```
 > In `galaxy.yml`, ensure that the `galaxy_infrastructure_url` parameter is present under the galaxy section:
 > ```yaml
