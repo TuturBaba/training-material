@@ -1,7 +1,7 @@
 ---
 layout: tutorial_hands_on
 
-title: Pipeline Moorev – Annoter des images marines et entraîner un modèle de détection sur Galaxy
+title: Annoter des images marines - Project Moorev
 questions:
 - Comment utiliser l'intelligence artificielle pour m'aider à annoter des images d'espèces marines ?
 - Comment vérifier et corriger ces annotations avant d'entraîner un modèle ?
@@ -102,13 +102,18 @@ Le pipeline repose sur six outils Galaxy complémentaires :
 > 3. Connectez-vous ou créez un compte gratuit
 >
 > ![Creation compte](../../images/Moorev/Register.gif) 
-> L'interface Galaxy est divisée en trois zones :
-> * À **gauche** : la liste des outils disponibles — c'est là que vous cherchez et lancez les outils
-> * Au **centre** : la zone d'affichage — pour visualiser vos résultats
-> * À **droite** : votre historique — il garde la trace de tous vos fichiers et analyses
->
-> ![Capture d'écran de l'interface Galaxy avec les trois panneaux](../../images/champbloc/galaxy_interface.png)
->
+> 
+> La page d'accueil de Galaxy est divisée en quatre sections :
+> 
+> * La barre d'activités à gauche : _C'est ici que vous naviguez entre les ressources de Galaxy (Outils, Workflows, Historiques, etc.)_
+> * Le panneau d'activité actif à gauche : _Par défaut, l'activité {% icon tool %} **Outils** est sélectionnée et son panneau est déplié_
+> * Le panneau de visualisation au centre : _La zone principale pour visualiser et interagir avec vos analyses_
+> * L'historique des analyses et des fichiers à droite : _Affiche votre historique "actuel", c'est-à-dire l'endroit où seront stockés tous les nouveaux fichiers de votre analyse_
+> 
+> ![Capture d'écran de l'interface Galaxy](../../images/Moorev/galaxy_ecology_interface.png) 
+> 
+> La première fois que vous utilisez Galaxy, aucun fichier ne sera présent dans votre panneau d'historique.
+> 
 {: .details}
 # Vue d'ensemble du pipeline
 
