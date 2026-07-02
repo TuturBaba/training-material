@@ -8,7 +8,7 @@ questions:
 - Comment vérifier et corriger ces annotations ?
 objectives:
 - Utiliser SAM3 pour détecter automatiquement des espèces marines à partir d'un simple mot-clé
-- Corriger les annotations générées avec Edit COCO et AnyLabeling
+- Corriger les annotations générées avec Edit COCO Annotation
 time_estimation: 3H
 key_points:
 - L'IA fait le gros du travail d'annotation, mais un œil humain reste indispensable pour vérifier et corriger.
@@ -39,10 +39,8 @@ translations:
 Dans ce tutoriel, nous allons explorer un pipeline complet pour l'annotation d'images et de vidéos d'espèces marines. Nous utiliserons comme exemple une vidéo issue du projet [Moorev](https://moorev.fr/), découpée et disponible sur Zenodo.
 
 Ce pipeline se décompose en deux grandes étapes :
-1. **Annotation automatique** par prompt textuel avec {% tool [SAM3 Semantic Segmentation](toolshed.g2.bx.psu.edu/repos/ecology/sam3_semantic_segmentation/sam3_semantic_segmentation/1.0.1+galaxy4) %}
-2. **Correction et validation** des annotations avec :
-   - {% tool [Edit COCO Annotation](edit_coco_annotation) %}
-   - {% tool [AnyLabeling Interactive](interactive_tool_anylabeling) %}
+1. **Annotation automatique** par prompt textuel avec {% tool [SAM3 Semantic Segmentation](https://usegalaxy.eu/?tool_id=toolshed.g2.bx.psu.edu/repos/ecology/sam3_semantic_segmentation/sam3_semantic_segmentation/1.0.1+galaxy6) %}
+2. **Correction et validation** des annotations avec {% tool [Edit COCO Annotation](https://usegalaxy.eu/?tool_id=toolshed.g2.bx.psu.edu/repos/bgruening/edit_coco_annotation/edit_coco_annotation/1.0.0+galaxy0) %}
 
 > <details-title>En savoir plus sur le projet MOOREV</details-title>
 >
@@ -128,10 +126,10 @@ SAM3 est un modèle de segmentation guidé par texte. Il détecte et segmente au
 >
 >    - {% icon param-file %} *"Model data"* : `Segment Anything Model 3 (SAM 3)` (par défaut)
 >    - {% icon param-select %} *"Input type"* : `One video`
->    - {% icon param-file %} *"Input video file"* : `Lieujaune-PorzBreign-GOPR5167_Edited.mp4`
->    - {% icon param-select %} *"Video quality"* : `4000k - Good (1080p)`
->    - {% icon param-select %} *"COCO output mode"* : `Annotate extracted frames — saves JPGs and one COCO entry per frame image`
+>    - {% icon param-file %} *"Input video file"* : `1: Lieujaune-PorzBreign-GOPR5167_Edited.mp4`
+>    - {% icon param-select %} *"Video quality"* : `Original quality (lossles)` (par défaut)
 >    - {% icon param-select %} *"Additional output formats"* : `Empty` (par défaut)
+>    - {% icon param-select %} *"Export individual frames"* : `Both annoted and raw frames`
 >    - {% icon param-text %} *"Text prompt"* : `fish`
 >    - {% icon version %} *"Confidence threshold"* : `0.5`
 >    - {% icon version %} *"Video frame stride"* : `5`
@@ -147,9 +145,10 @@ SAM3 est un modèle de segmentation guidé par texte. Il détecte et segmente au
 >    {: .comment}
 >
 > 3. Une fois terminé, vous obtenez dans votre historique :
->    - **32: Annotation COCO** : `annotations.json` — les masques de segmentation au format COCO
->    - **31: Annotated Outputs** : la vidéo annotée pour vérification visuelle
->    - **30: COCO Extracted Frames** : la collection d'images extraites (non annotées)
+>    - **5: Annotation COCO** : `annotations.json` — les masques de segmentation au format COCO
+>    - **4: Annotated Frames** : la collection d'images extraites (annotées)
+>    - **3: Raw Frames** : la collection d'images extraites (non annotées)
+>    - **2: COCO Extracted Frames** : la vidéo annotée pour vérification visuelle
 >
 > 4. Vérifiez visuellement les résultats en cliquant sur {% icon galaxy-eye %} sur **Annotated Outputs**
 >
@@ -165,7 +164,7 @@ SAM3 est un modèle de segmentation guidé par texte. Il détecte et segmente au
 
 # Correction et validation des annotations
 
-Nous allons voir 2 outils complémentaires pour corriger les annotations. Ils ne sont pas opposés : vous pouvez les utiliser l'un après l'autre, ou n'en utiliser qu'un seul selon vos besoins.
+Nous allons voir comment corriger les annotations avec **Edit COCO Annotation**, puis vérifier le résultat avec **COCO Annotation Visualizer**.
 
 ## Corriger avec Edit COCO Annotation
 
@@ -179,6 +178,7 @@ L'outil **Edit COCO Annotation** permet de modifier les annotations COCO sans av
 >
 > 1. {% tool [Edit COCO Annotation](edit_coco_annotation) %} avec ces paramètres :
 >
+>    - {% icon param-file %} *"COCO annotation file"* : `5: Annotation COCO `
 >    - {% icon param-select %} *"Mode"* : `Keep - keep only listed IDs (remove all others)`
 >    - {% icon param-repeat %} *"1: Track to keep"*
 >        - {% icon param-text %} *"Track IDs"* : `0,4-6`
@@ -200,7 +200,7 @@ L'outil **Edit COCO Annotation** permet de modifier les annotations COCO sans av
 >    {: .comment}
 >
 > 2. Une fois terminé, vous obtenez dans votre historique :
->    - **58: Edited COCO annotations** : Le JSON format COCO modifier d'après les entrées
+>    - **54: Edited COCO annotations** : le fichier JSON au format COCO, modifié selon les paramètres renseignés ci-dessus
 >
 {: .hands_on}
 
@@ -213,9 +213,9 @@ Cet outil permet de visualiser facilement un fichier JSON au format COCO superpo
 > 1. {% tool [COCO Annotation Visualizer](coco_annotation_visualizer) %} avec ces paramètres :
 >
 >    - {% icon param-select %} *"Input Type"* : `One Video`
->    - {% icon param-file %} *"Input video file"* : `Lieujaune-PorzBreign-GOPR5167_Edited.mp4`
+>    - {% icon param-file %} *"Input video file"* : `1: Lieujaune-PorzBreign-GOPR5167_Edited.mp4`
 >    - {% icon version %} *"Frame stride"* : `5`
->    - {% icon param-file %} *"COCO annotation file"* : `Edited COCO annotations`
+>    - {% icon param-file %} *"COCO annotation file"* : `54: Edited COCO annotations`
 >    - {% icon param-text %} *"Filter categories"* : `Empty` (par défaut)
 >    - Dans *"Display options"* :
 >        - {% icon param-toggle %} *"Show bounding boxes"* : `No`
@@ -231,53 +231,11 @@ Cet outil permet de visualiser facilement un fichier JSON au format COCO superpo
 >    - {% icon version %} *"Video frame rate (FPS)"* : `5.0`
 >    - {% icon param-toggle %} *"Annotated frames only"* : `Yes` (par défaut)
 >
-{: .hands_on}
-
-## Corriger manuellement avec AnyLabeling
-
-AnyLabeling est un outil interactif qui permet de corriger les annotations directement sur les images, incluant la modification des masques de segmentation. Il offre plus de liberté qu'Edit COCO, mais demande plus de temps.
-
-> <comment-title>Limites d'AnyLabeling pour les vidéos</comment-title>
+> 2. Une fois terminé, vous obtenez dans votre historique :
+>    - **56: Annoted video** : la vidéo annotée
+>    - **55: Annotated images** : chaque frame annotée
 >
-> AnyLabeling présente deux limitations importantes dans ce contexte :
-> - La conversion du format COCO vers LabelMe entraîne la **perte des Track IDs**
-> - AnyLabeling n'est pas conçu pour les vidéos : sans tracking, vous devrez corriger les annotations **frame par frame**
->
-{: .comment}
-
-### Convertir les annotations COCO en format LabelMe
-
-Le format COCO est un unique fichier JSON contenant toutes les annotations. Le format LabelMe, lui, requiert **un fichier JSON par frame**, nommé exactement comme l'image correspondante (à l'extension près).
-
-> <hands-on-title>Conversion COCO vers LabelMe</hands-on-title>
->
-> 1. {% tool [COCO to LabelMe JSON Converter](coco2labelme) %} avec ces paramètres :
->
->    - {% icon param-file %} *"COCO annotation file"* : `Annotation COCO`
->    - {% icon param-select %} *"Image path mode"* : `Custom - user defined base path`
->    - {% icon param-text %} *"Custom base path"* : `Empty` (laisser vide)
->
->    > <comment-title>Pourquoi laisser le chemin vide ?</comment-title>
->    >
->    > AnyLabeling cherche les images dans le même dossier que les annotations. En laissant le chemin vide, le nom de la frame est utilisé directement, ce qui correspond à l'organisation des fichiers dans l'outil interactif.
->    >
->    {: .comment}
->
-{: .hands_on}
-
-### Corriger les annotations avec AnyLabeling
-
-AnyLabeling est un outil interactif : Galaxy lance une application dans un environnement virtuel que vous contrôlez depuis votre navigateur. Une fois vos corrections terminées, vous fermez l'application et les données sont renvoyées dans votre historique Galaxy.
-
-> <hands-on-title>Annotation manuelle via AnyLabeling</hands-on-title>
->
-> 1. {% tool [AnyLabeling Interactive](interactive_tool_anylabeling) %} avec ces paramètres :
->
->    - {% icon param-file %} *"Input images"* : `COCO Extracted Frames`
->    - {% icon param-file %} *"Pre-existing annotations"* : `LabelMe JSON annotations`
->    - {% icon param-file %} *"Classes file (one class per line)"* : `Empty` (par défaut)
->    - {% icon param-file %} *"A tarball containing custom model files and yaml files"* : `Empty` (par défaut)
->
+>    ![Annoted video](../../images/Annotation_AI_Pipeline/Visualize_output_Coco_Visualizer.gif){: style="width:65%; display:block; margin:auto;"}
 {: .hands_on}
 
 # Conclusion
@@ -287,6 +245,5 @@ Vous savez maintenant utiliser ce pipeline complet pour annoter des vidéos d'es
 - **SAM3** génère automatiquement des annotations à partir d'un simple prompt textuel
 - **Edit COCO** permet de nettoyer rapidement les annotations en gardant, supprimant ou renommant des IDs de tracks
 - **COCO Annotation Visualizer** permet de vérifier visuellement les résultats à chaque étape
-- **AnyLabeling** offre une correction manuelle fine, frame par frame, pour les cas complexes
 
 Ce pipeline est réutilisable pour d'autres espèces ou d'autres projets d'imagerie marine — il suffit d'adapter le prompt et les paramètres de confiance de SAM3.
